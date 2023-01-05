@@ -1,6 +1,6 @@
 ![Restoration Stone Banner](https://imgur.com/4xrthSL.png)
 
-![Curseforge](http://cf.way2muchnoise.eu/full_791864_downloads.svg?badge_style=for_the_badge)
+[![Curseforge](http://cf.way2muchnoise.eu/full_791864_downloads.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/restoration-stone)
 
 # Restoration Stone
 
