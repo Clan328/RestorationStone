@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+issueTrackerURL="https://github.com/Clan328/RestorationStone/issues"
+
+[[mods]]
+modId="restorationstone"
+version="${file.jarVersion}"
+displayName="Restoration Stone"
+displayURL="https://github.com/Clan328/RestorationStone"
+logoFile="logo.png"
+credits="Thanks to Malcolm Riley for the Restoration Stone's texture"
+authors="aTechnologeek"
+description='''
+Completely repair an item and reset its repair cost.
+'''
+
+[[dependencies.restorationstone]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.restorationstone]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
