@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[37,)"
+loaderVersion="[40,)"
 license="All rights reserved"
 issueTrackerURL="https://github.com/Clan328/RestorationStone/issues"
 
@@ -18,13 +18,13 @@ Adds an item that repairs any tool, weapon or armor and resets its repair cost o
 [[dependencies.restorationstone]]
     modId="forge"
     mandatory=true
-    versionRange="[37,)"
+    versionRange="[40,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.restorationstone]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.17.1,1.18)"
+    versionRange="[1.18.2,1.19)"
     ordering="NONE"
     side="BOTH"

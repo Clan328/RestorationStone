@@ -2,7 +2,8 @@ package com.atechnologeek.restorationstone.event;
 
 import com.atechnologeek.restorationstone.registries.ItemRegistries;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.common.BasicTrade;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraftforge.event.AnvilUpdateEvent;
 import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,6 +27,6 @@ public class EventHandler {
 
     @SubscribeEvent
     public static void onWandererTrades(WandererTradesEvent event) {
-        event.getRareTrades().add(new BasicTrade(48, new ItemStack(ItemRegistries.RESTORATION_STONE.get()), 1, 0));
+        event.getRareTrades().add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 48), new ItemStack(ItemRegistries.RESTORATION_STONE.get()), 1, 0, 1.0F));
     }
 }
