@@ -1,7 +1,7 @@
 package com.atechnologeek.restorationstone.event;
 
 import com.atechnologeek.restorationstone.registries.ItemRegistries;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.BasicTrade;
 import net.minecraftforge.event.AnvilUpdateEvent;
 import net.minecraftforge.event.village.WandererTradesEvent;

@@ -1,7 +1,7 @@
 package com.atechnologeek.restorationstone.item;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 
 public class RestorationStoneItem extends Item {
     public RestorationStoneItem(Item.Properties properties) {

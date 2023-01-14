@@ -25,6 +25,9 @@ out
 *.iml
 .idea
 
+# Files from Forge MDK
+changelog.txt
+
 # Folder config file
 Desktop.ini
 
