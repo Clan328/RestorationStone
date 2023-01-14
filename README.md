@@ -6,6 +6,10 @@
 
 Restoration Stone adds an item that repairs any tool, weapon or armor and resets its repair cost on an anvil.
 
+## Features:
+* Restoration Stone that can be traded by a Wandering Trader
+* If used in an anvil with another item with durability, it will fully repair it and reset its xp repair cost for future uses on any anvil (such as using it with enchanted books or repairing it)
+
 ## Trading:
 ![Trading](https://imgur.com/Ei0Wqn5.png)
 

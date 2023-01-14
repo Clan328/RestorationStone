@@ -11,15 +11,15 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.0.0-1.16.5'
-group = 'com.atechnologeek.restorationstone'
-archivesBaseName = 'restorationstone'
+version = "${project.mod_version}-${project.minecraft_version}"
+group = project.maven_group
+archivesBaseName = project.archives_base_name
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(8)
+java.toolchain.languageVersion = JavaLanguageVersion.of(project.java_language_version)
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
-    mappings channel: 'official', version: '1.16.5'
+    mappings channel: 'official', version: project.minecraft_version
 
     runs {
         client {
@@ -71,19 +71,19 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.5-36.2.34'
+    minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
     manifest {
         attributes([
-            "Specification-Title": "restorationstone",
-            "Specification-Vendor": "atechnologeek",
+            "Specification-Title": project.archives_base_name,
+            "Specification-Vendor": project.vendor,
             "Specification-Version": "1",
-            "Implementation-Title": project.name,
-            "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"atechnologeek",
+            "Implementation-Title": project.archives_base_name,
+            "Implementation-Version": project.version,
+            "Implementation-Vendor" : project.vendor,
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
