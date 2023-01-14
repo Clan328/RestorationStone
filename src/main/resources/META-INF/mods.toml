@@ -5,14 +5,14 @@ issueTrackerURL="https://github.com/Clan328/RestorationStone/issues"
 
 [[mods]]
 modId="restorationstone"
-version="${file.jarVersion}"
+version="1.0.0"
 displayName="Restoration Stone"
 displayURL="https://github.com/Clan328/RestorationStone"
 logoFile="logo.png"
 credits="Thanks to Malcolm Riley for the Restoration Stone's texture"
-authors="aTechnologeek"
+authors="aTechnoloGeek"
 description='''
-Completely repair an item and reset its repair cost.
+Adds an item that repairs any tool, weapon or armor and resets its repair cost on an anvil.
 '''
 
 [[dependencies.restorationstone]]
